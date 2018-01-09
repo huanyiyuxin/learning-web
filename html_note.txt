@@ -1,0 +1,43 @@
+一.<video>标签允许嵌入一个简单的视频，
+当中的一些属性如下:
+1.src
+同 <img> 标签使用方式相同，src 属性指向你想要嵌入网页当中的视频资源，他们的使用方式完全相同。
+将 src 属性从 <video> 标签中移除，转而将它放在几个单独的标签 <source> 当中,浏览器将会检查 <source> 标签，并且播放第一个与其自身 codec 向匹配的媒体。你的视频应当包括 WebM 和 MP4 两种格式，这两种在目前已经足够支持大多数平台和浏览器。
+#例子
+<video controls>
+  <source src="rabbit320.mp4" type="video/mp4">
+  <source src="rabbit320.webm" type="video/webm">
+  <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
+</video>
+2.controls
+用户必须能够控制视频和音频的回放功能。你可以使用浏览器提供的控制接口，同时你也可以在 JavaScript （JavaScript API）当中使用这些控制接口。至少，这些媒体应该包括开始和停止，以及调整音量的功能。
+3.<video> 标签内的段落
+这个叫做后备内容 — 当浏览器不支持 <video> 标签的时候，它将会显示出来，它使我们能够对旧的浏览器做一些兼容处理。你可以添加任何后备内容，在这个例子中我们提供了一个指向这个视频文件的链接，从而使用户可以至少访问到这个文件，而不会局限于浏览器的支持。
+4.width 和 height
+你可以用属性控制视频的尺寸，也可以用 CSS 来控制视频尺寸。 无论使用哪种方式，视频都会保持它原始的长宽比 — 也叫做纵横比。如果你设置的尺寸没有保持视频原始长宽比，那么视频边框将会拉伸，而未被视频内容填充的部分，将会显示默认的背景颜色。
+5.autoplay
+这个属性会使音频和视频内容立即播放，即使页面的其他部分还没有加载完全。建议不要应用这个属性在你的网站上，因为用户们会比较反感自动播放的媒体文件。
+6.loop
+这个属性可以让音频或者视频文件循环播放。同样不建议使用，除非有必要。
+7.muted
+这个属性会导致媒体播放时，默认关闭声音。
+8.poster
+这个属性指向了一个图像的URL，这个图像会在视频播放前显示。通常用于粗略的预览或者广告。
+9.preload
+这个属性被用来缓冲较大的文件，有3个值可选：
+•"none" ：不缓冲
+•"auto" ：页面加载后缓存媒体文件
+•"metadata" ：仅缓冲文件的元数据
+#例子
+<video controls width="400" height="400"
+       autoplay loop muted
+       poster="poster.png">
+  <source src="rabbit320.mp4" type="video/mp4">
+  <source src="rabbit320.webm" type="video/webm">
+  <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
+</video>
+
+二.<audio> 标签用于嵌入一个音频文件。与 <video> 标签的使用方式几乎完全相同，有一些细微的差别比如边框不同。
+
+
+三.
