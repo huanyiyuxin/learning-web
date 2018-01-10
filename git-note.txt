@@ -1,0 +1,8 @@
+1.建立远程仓库：git remote add origin +仓库url（我的是git@github.com:huanyiyuxin/仓库名.git）
+
+2.同步远程远程仓库数据（一般是第一次）：git pull --rebase origin master
+
+3.上传文件到远程仓库：
+git add +文件名
+git commit -m "注释"
+git push -u origin master
