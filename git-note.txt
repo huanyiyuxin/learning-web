@@ -1,8 +1,10 @@
-1.½¨Á¢Ô¶³Ì²Ö¿â£ºgit remote add origin +²Ö¿âurl£¨ÎÒµÄÊÇgit@github.com:huanyiyuxin/²Ö¿âÃû.git£©
+1.å»ºç«‹è¿œç¨‹ä»“åº“ï¼šgit remote add origin +ä»“åº“urlï¼ˆæˆ‘çš„æ˜¯git@github.com:huanyiyuxin/ä»“åº“å.gitï¼‰
+  é…ç½®çš„æ˜¯ä½ ä¸ªäººçš„ç”¨æˆ·åç§°git config --global user.name "John Doe"
+  é…ç½®ç”µå­é‚®ä»¶åœ°å€ git config --global user.email johndoe@example.com
 
-2.Í¬²½Ô¶³ÌÔ¶³Ì²Ö¿âÊı¾İ£¨Ò»°ãÊÇµÚÒ»´Î£©£ºgit pull --rebase origin master
+2.åŒæ­¥è¿œç¨‹è¿œç¨‹ä»“åº“æ•°æ®ï¼ˆä¸€èˆ¬æ˜¯ç¬¬ä¸€æ¬¡ï¼‰ï¼šgit pull --rebase origin master
 
-3.ÉÏ´«ÎÄ¼şµ½Ô¶³Ì²Ö¿â£º
-git add +ÎÄ¼şÃû
-git commit -m "×¢ÊÍ"
+3.ä¸Šä¼ æ–‡ä»¶åˆ°è¿œç¨‹ä»“åº“ï¼š
+git add +æ–‡ä»¶å
+git commit -m "æ³¨é‡Š"
 git push -u origin master
